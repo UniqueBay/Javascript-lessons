@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript continues</title>
+  </head>
+  <body>
+    <script>
+      // Prompt(): This is going to display a box with a text field that allows the user input the required message.
+      // The text in the brace is the message directing the user what is need/required to input.
+      // And as the name implies (prompt) it is going to display as an event on the webpage
+      // It can be used to collect data from users.
+      // It takes input.
+      var name = prompt("Enter your name");
+
+      // Alert(): This belongs in the same category as prompt().
+      // It can be used to display data on the browser.
+      // Unlike prompt, alert gives output.
+      alert("Your name is " + name);
+
+      // Using strings literals you can add and display the name variable as well.
+      // Using the '${}' to collect or input the variable. It can also be used to perform some operation on the string.
+      alert(`You said your name is ${name}`);
+
+      // Prompt() treats any type of data as a string.
+      var age = prompt("Enter your age");
+
+      // To test how prompt treat inputs.
+      // typeof() is a unary operators that is used to check the data type of any input
+      alert(typeof age);
+
+      // To convert the prompt input to it original data type.
+      // By assigning the old variable to a new variable and
+      // then specifying the data type of the variable required or inputted
+      age = Number(age);
+
+      // To test/check
+      alert(typeof age);
+
+      /* CONDITIONAL STATEMENT */
+
+      /*
+      TYPES
+
+      1. if statement
+      2. if else statement
+      3. Else if statement
+      4. Switch statement.
+      */
+
+      // 1. If statement
+      // This is used to check/run if a condition is true.
+      /*
+        Syntax:
+
+        if(condition)
+        {
+          action
+        }
+      */
+
+      // This code block will only run/work if the condition is meet/true
+      // If orderwise nothing will happen.
+      if (age >= 23) {
+        alert("Congratulations! You are old");
+      }
+
+      // 2. If else statement
+      // This is used to check/run two conditions(True or false)
+      /*
+        Syntax:
+
+        if(condition)
+        {
+          action
+        } else {
+          do something else
+        }
+      */
+      // This code block will run one action if the statement/condition is true
+      // and the order action if the statement/condition is false.
+      if (age <= 22) {
+        alert("Bloody millennium.");
+      } else {
+        alert("Gen Z way sure.");
+      }
+
+      // 3. Else if statement
+      // This is used to run/check for multiple conditions
+
+      /*
+      if(condition1)
+      {
+        action1
+      } else if (condition2) {
+        action2
+      } else if (condition3) {
+        action3
+      } else if (conditionN) {
+        actionN
+      } else {
+        end action.
+      }
+      */
+
+      if (age <= 22) {
+        alert("Bloody Millennium!");
+      } else if (age >= 23) {
+        alert("Gen Z way sure.");
+      } else if (age >= 35) {
+        alert("You don old!");
+      } else {
+        alert("Why you never die!");
+      }
+
+      // Confirm(): This is a used to confirm an action.
+      // It can be used to display a true or false statement (yes/no).
+      var confirmation = confirm("Are you sure?");
+      if (confirmation == true) {
+        alert("You try.")
+      } else {
+        alert ("Do am if e easy")
+      }
+    </script>
+  </body>
+</html>
